@@ -1,0 +1,87 @@
+/*
+    Author: Matthew Tran
+
+    Last Modified: Feb 1 2023
+*/
+body {
+    background-color: palevioletred;
+}
+h1 {
+    font-family: "Lucida Handwriting", Cursive;
+    color: rgba(0, 0, 255, 0.704);
+}
+h3 {
+    font-family: "Papyrus", Fantasy;
+    color: rgba(79, 23, 129, 0.704);
+}
+table {
+    background-color: rgba(221, 95, 95, 0.704);
+    width: 100%;
+    
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #961e11;
+    color: #fff;
+}
+
+button:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+button:hover:after {
+    width: 100%;
+}
+
+select:hover {
+    transform: scale(2);
+    background: #76ee3a;
+    transition: all 0.3s ease;
+}
+select:hover:after {
+    width: 100%;
+}
+
+/* Referenced
+https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.dropbtn {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {
+    background-color: #515050;
+    transition: all 0.3s ease;}

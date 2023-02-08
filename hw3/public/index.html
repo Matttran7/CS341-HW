@@ -1,0 +1,87 @@
+  <!--
+    Author: Matthew Tran
+
+    Last Modified: Feb 1 2023
+  -->
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="stylesheets/tranma24.css">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/></script>
+
+    <script src="javascripts/stuff.js"></script>
+
+  </head>
+<body>
+
+<h1>Cheesecake Order Form</h1><br>
+<img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg" alt="Cheesecake" width="250" height="300"><br>
+
+<form action="" method="get" id="OrderForm">
+  <table id="formTable">
+    <p id="QuantityP">Quantity Topping</p>
+<td>
+    <select id="amount" name="amounts" form="SelectAmount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+  </td>
+
+  <td>
+    <input type="radio" id="plain" name="Cheesecake_topping" value="Plain">
+    <label for="plain">Plain</label><br>
+    <input type="radio" id="cherry" name="Cheesecake_topping" value="Cherry">
+    <label for="cherry">Cherry</label><br>
+    <input type="radio" id="chocolate" name="Cheesecake_topping" value="Chocolate">
+    <label for="chocolate">Chocolate</label><br>
+  </td>
+</table>
+
+<br>
+
+  <label for="fnotes" id="notesP">Notes:</label><br>
+  <textarea id="fnotes" name="fnotes" rows="4" cols="50" placeholder="Enter any special instructions here."></textarea>
+  <br>
+  <br>
+  <br>
+</form>
+
+<button type="submit" form="OrderForm" id="orderButton">Order</button>
+
+<script src="javascripts/stuff.js"></script>
+
+  <h3>Orders for
+  <!--Had help from Andrew Daly on stack overflow-->
+
+  <!--https://stackoverflow.com/questions/55832746/how-to-set-dropdown-button-text-based-on-selected-option
+    and w3school
+  https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+  <div class="dropdown">
+    <button class="dropbtn" id="dateButton">Jan
+    </button>
+    <div class="dropdown-content">
+      <a href="#" value="Jan" onclick="changeText(this.innerText)">Jan</a>
+      <a href="#" value="Feb" onclick="changeText(this.innerText)">Feb</a>
+      <a href="#" value="March" onclick="changeText(this.innerText)">March</a>
+      <a href="#" value="April" onclick="changeText(this.innerText)">April</a>
+      <a href="#" value="May" onclick="changeText(this.innerText)">May</a>
+      <a href="#" value="June" onclick="changeText(this.innerText)">June</a>
+      <a href="#" value="July" onclick="changeText(this.innerText)">July</a>
+      <a href="#" value="Aug" onclick="changeText(this.innerText)">Aug</a>
+      <a href="#" value="Sept" onclick="changeText(this.innerText)">Sept</a>
+      <a href="#" value="Oct" onclick="changeText(this.innerText)">Oct</a>
+      <a href="#" value="Nov" onclick="changeText(this.innerText)">Nov</a>
+      <a href="#" value="Dec" onclick="changeText(this.innerText)">Dec</a>
+    </div>
+  </div>
+</h3>
+  <ul>
+    <li>11 cherry</li>
+    <li>17 chocolate</li>
+    <li>31 plain </li>
+  </ul>
+
+</body>
+</html>
