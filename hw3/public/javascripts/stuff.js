@@ -1,3 +1,8 @@
+/**
+Author: Matthew Tran
+
+Last Modified: Feb 8 2023*/
+
 $(document).ready(function(){
   $("#orderButton").click(function(){
     var amount_ = $("select#amount").val();
